@@ -109,6 +109,11 @@
                 },
             });
 
+            /* 
+             * callback function to catch card type and validation of the iframe fields
+             * first time triggered if nrsClient.init will be called
+             * also everytime if iframe fields are changed (change event)
+             */
             function checkValidationAllIframefields(internValid, cardtypes, messages) {
                 console.log('test.template.html: valid = ' + internValid);
 
